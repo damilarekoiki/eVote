@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-border-color: #000; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SubmitVoteController">
+   <content>
+      <BorderPane style="-fx-background-color: #023;">
+         <top>
+            <HBox style="-fx-background-color: #036;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="e-Voting 2018" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="200.0" right="200.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefWidth="400.0" style="-fx-background-color: #038;" text="CANDIDATES YOU SELECTED" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="80.0" right="80.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <VBox>
+                     <children>
+                        <Label alignment="CENTER" text="PRESIDENT" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="AR CENA" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <HBox>
+                           <children>
+                              <ImageView fx:id="pres_imgView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="label_presd" text="jdjdd" textFill="WHITE">
+                                 <font>
+                                    <Font name="AR ESSENCE" size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="85.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="50.0" top="45.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label alignment="CENTER" text="VICE-PRESIDENT" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="AR CENA" size="24.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="10.0" layoutY="37.0">
+                           <children>
+                              <ImageView fx:id="vP_imgView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="label_vP" text="erjff" textFill="WHITE">
+                                 <font>
+                                    <Font name="AR ESSENCE" size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="85.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="50.0" top="45.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <Label alignment="CENTER" text="TREASURER" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="AR CENA" size="24.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="10.0" layoutY="137.0">
+                           <children>
+                              <ImageView fx:id="treas_imgView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label fx:id="label_treas" text="jhff" textFill="WHITE">
+                                 <font>
+                                    <Font name="AR ESSENCE" size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" top="85.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="50.0" top="45.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <HBox spacing="25.0">
+                     <children>
+                        <Button fx:id="editButton" mnemonicParsing="false" onAction="#editVote" style="-fx-background-color: #036;" text="EDIT VOTE" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#submitVote" style="-fx-background-color: #036;" text="SUBMIT VOTE" textFill="WHITE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="200.0" top="35.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="100.0" top="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+   </content>
+</ScrollPane>

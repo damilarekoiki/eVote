@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #036;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="e-Voting 2018" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="200.0" right="200.0" top="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox maxHeight="50.0" maxWidth="300.0" prefHeight="300.0" prefWidth="300.0" spacing="10.0" style="-fx-background-color: #ccc; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,1) ,5,0.5,1,2);" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="msg" text="Login to start voting">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="voter" prefHeight="50.0" promptText="Enter pin number">
+               <font>
+                  <Font name="Andalus" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="loginBtn" maxHeight="50.0" maxWidth="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: black;" text="Login" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="390.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets left="30.0" right="30.0" top="80.0" />
+         </BorderPane.margin>
+         <effect>
+            <Glow level="0.12" />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

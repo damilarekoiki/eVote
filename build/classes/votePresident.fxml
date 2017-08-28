@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane style="-fx-background-color: #023; -fx-border-color: #000; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VoteController">
+   <top>
+      <HBox fx:id="menuBackground" style="-fx-background-color: #036;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="menuHeader" alignment="CENTER" text="e-Voting 2018" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="200.0" right="200.0" top="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox style="-fx-opaque-insets: ;" BorderPane.alignment="CENTER">
+         <children>
+            <Label style="-fx-background-color: #038;" text="PRESIDENTIAL CANDIDATES" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="8.0" right="8.0" />
+               </padding>
+            </Label>
+            <HBox>
+               <children>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@aspirantsPix/koiki_1.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label text="Koiki_1" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_presd1" mnemonicParsing="false" onAction="#selectCandidate" style="-fx-background-color: #000;" text="VOTE" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="35.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="110.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@aspirantsPix/koiki_2.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Koiki_2" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_presd2" mnemonicParsing="false" onAction="#selectCandidate" style="-fx-background-color: #000;" text="VOTE" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="35.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox spacing="10.0">
+               <children>
+                  <Button disable="true" mnemonicParsing="false" style="-fx-background-color: #036;" text="PREV" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="nvBtn_pres" mnemonicParsing="false" onAction="#selectCandidate" style="-fx-background-color: RED;" text="CAST NO VOTE" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="nextBtn_pres" mnemonicParsing="false" onAction="#scenesSwitchHandler" style="-fx-background-color: #036;" text="NEXT" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="100.0" top="10.0" />
+         </BorderPane.margin>
+         <opaqueInsets>
+            <Insets bottom="1.0" left="1.0" right="0.5" top="1.0" />
+         </opaqueInsets>
+      </VBox>
+   </center>
+</BorderPane>
